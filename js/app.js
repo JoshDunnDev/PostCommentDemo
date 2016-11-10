@@ -42,7 +42,7 @@ var Application = React.createClass({
   },
   /* ----- Add Post When Post Is Clicked (See Post Module) ----- */
   addPost: function(post) {
-    this.state.data.push({
+    this.state.data.unshift({
       id: nextId,
       post: post,
       comments: [],
